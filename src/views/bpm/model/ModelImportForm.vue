@@ -50,7 +50,7 @@
   </Dialog>
 </template>
 <script lang="ts" setup>
-import { getAccessToken, getTenantId } from '@/utils/auth'
+import { getAccessToken } from '@/utils/auth'
 
 defineOptions({ name: 'ModelImportForm' })
 
@@ -93,7 +93,6 @@ const submitForm = async () => {
   // 提交请求
   uploadHeaders.value = {
     Authorization: 'Bearer ' + getAccessToken(),
-    'tenant-id': getTenantId()
   }
   formLoading.value = true
   uploadRef.value!.submit()
