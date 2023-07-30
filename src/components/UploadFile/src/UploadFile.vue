@@ -65,7 +65,7 @@ const uploadList = ref<UploadUserFile[]>([])
 const fileList = ref<UploadUserFile[]>(props.modelValue)
 const uploadNumber = ref<number>(0)
 const uploadHeaders = ref({
-  Authorization: 'Bearer ' + getAccessToken(),
+  Authorization: 'Bearer ' + getAccessToken()
 })
 // 文件上传之前判断
 const beforeUpload: UploadProps['beforeUpload'] = (file: UploadRawFile) => {

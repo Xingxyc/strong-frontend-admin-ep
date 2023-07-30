@@ -204,7 +204,7 @@ const getCookie = () => {
       ...loginData.loginForm,
       username: loginForm.username ? loginForm.username : loginData.loginForm.username,
       password: loginForm.password ? loginForm.password : loginData.loginForm.password,
-      rememberMe: loginForm.rememberMe ? true : false,
+      rememberMe: loginForm.rememberMe ? true : false
     }
   }
 }

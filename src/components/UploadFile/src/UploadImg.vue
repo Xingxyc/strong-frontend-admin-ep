@@ -97,7 +97,7 @@ const deleteImg = () => {
 }
 
 const uploadHeaders = ref({
-  Authorization: 'Bearer ' + getAccessToken(),
+  Authorization: 'Bearer ' + getAccessToken()
 })
 
 const editImg = () => {

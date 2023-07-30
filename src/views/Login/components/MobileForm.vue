@@ -86,7 +86,7 @@ import type { RouteLocationNormalizedLoaded } from 'vue-router'
 
 import { useIcon } from '@/hooks/web/useIcon'
 
-import {  setToken } from '@/utils/auth'
+import { setToken } from '@/utils/auth'
 import { usePermissionStore } from '@/store/modules/permission'
 import { sendSmsCode, smsLogin } from '@/api/login'
 import LoginFormTitle from './LoginFormTitle.vue'

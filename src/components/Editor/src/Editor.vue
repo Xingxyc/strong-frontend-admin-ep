@@ -104,7 +104,7 @@ const editorConfig = computed((): IEditorConfig => {
           // 自定义增加 http  header
           headers: {
             Accept: '*',
-            Authorization: 'Bearer ' + getAccessToken(),
+            Authorization: 'Bearer ' + getAccessToken()
           },
 
           // 跨域是否传递 cookie ，默认为 false

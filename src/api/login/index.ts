@@ -22,8 +22,6 @@ export const refreshToken = () => {
   return request.post({ url: '/system/auth/refresh-token?refreshToken=' + getRefreshToken() })
 }
 
-
-
 // 登出
 export const loginOut = () => {
   return request.post({ url: '/system/auth/logout' })

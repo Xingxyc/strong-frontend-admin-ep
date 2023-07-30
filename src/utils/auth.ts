@@ -60,4 +60,3 @@ export const setLoginForm = (loginForm: LoginFormType) => {
 export const removeLoginForm = () => {
   wsCache.delete(LoginFormKey)
 }
-
