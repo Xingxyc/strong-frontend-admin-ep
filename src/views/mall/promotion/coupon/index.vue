@@ -1,6 +1,4 @@
 <template>
-  <doc-alert title="功能开启" url="https://doc.iocoder.cn/mall/build/" />
-
   <ContentWrap>
     <!-- 搜索工作栏 -->
     <el-form :model="queryParams" ref="queryFormRef" :inline="true" label-width="68px">

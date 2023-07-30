@@ -1,5 +1,5 @@
 <template>
-  <el-alert  type="success" show-icon>
+  <el-alert type="success" show-icon>
     <template #title>
       <div @click="goToUrl">{{ '【' + title + '】文档地址：' + url }}</div>
     </template>
@@ -19,7 +19,6 @@ const props = defineProps({
 const goToUrl = () => {
   window.open(props.url)
 }
-
 </script>
 <style scoped>
 .el-alert--success.is-light {
