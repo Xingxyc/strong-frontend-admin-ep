@@ -46,7 +46,7 @@ const toProfile = async () => {
   push('/user/profile')
 }
 const toDocument = () => {
-  window.open('https://doc.iocoder.cn/')
+  window.open('http://www.strong-tech.com.cn/')
 }
 </script>
 
