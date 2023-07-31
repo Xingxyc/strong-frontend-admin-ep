@@ -66,7 +66,7 @@ const submitFileForm = () => {
   }
   // 提交请求
   uploadHeaders.value = {
-    Authorization: 'Bearer ' + getAccessToken(),
+    Authorization: 'Bearer ' + getAccessToken()
   }
   unref(uploadRef)?.submit()
 }

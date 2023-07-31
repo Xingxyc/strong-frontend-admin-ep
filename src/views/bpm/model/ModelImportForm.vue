@@ -92,7 +92,7 @@ const submitForm = async () => {
   }
   // 提交请求
   uploadHeaders.value = {
-    Authorization: 'Bearer ' + getAccessToken(),
+    Authorization: 'Bearer ' + getAccessToken()
   }
   formLoading.value = true
   uploadRef.value!.submit()
