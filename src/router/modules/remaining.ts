@@ -128,7 +128,6 @@ const remainingRouter: AppRouteRecordRaw[] = [
       }
     ]
   },
-
   {
     path: '/codegen',
     component: Layout,
@@ -326,6 +325,29 @@ const remainingRouter: AppRouteRecordRaw[] = [
           canTo: true,
           title: '查看 OA 请假',
           activeMenu: '/bpm/oa/leave'
+        }
+      }
+    ]
+  },
+  {
+    path: '/board',
+    component: Layout,
+    name: 'DemoBoard',
+    meta: {
+      hidden: true
+    },
+    children: [
+      {
+        path: 'boardHole',
+        component: () => import('@/views/demo/board/BoardHole.vue'),
+        name: 'DemoBoardHole',
+        meta: {
+          noCache: true,
+          hidden: true,
+          canTo: true,
+          icon: 'ep:edit',
+          title: '格局图孔位配置',
+          activeMenu: 'demo/board/index'
         }
       }
     ]
